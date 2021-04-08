@@ -1,0 +1,214 @@
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes revealRTL {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  65% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+
+@keyframes revealRTL {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  65% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+
+@-webkit-keyframes revealLTR {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  65% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes revealLTR {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  65% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    top: -30px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    top: -30px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+.social {
+  text-shadow: 2px 2px 2px #444;
+  padding: 20px;
+  margin: 80px auto;
+  background-color: #c09a00;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  -webkit-box-shadow: 4px 4px 6px #333;
+          box-shadow: 4px 4px 6px #333;
+  text-align: center;
+}
+
+.social h3 {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px #444;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .social h3 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .social h3 {
+    font-size: 24px;
+  }
+}
+
+.social .icons {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: .8px;
+}
+
+.social a i {
+  font-size: 35px;
+  padding: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .social .email {
+    font-size: 18px;
+  }
+  .social .icons a i {
+    font-size: 28px;
+    padding: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .social .email {
+    font-size: 22px;
+  }
+  .social .icons a i {
+    font-size: 30px;
+    padding: 15px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

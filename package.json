@@ -1,0 +1,19 @@
+{
+  "name": "moje-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "web",
+    "project"
+  ],
+  "author": "Malgorzata Jaskiewicz",
+  "license": "ISC",
+  "dependencies": {
+    "include-media": "^1.4.9"
+  }
+}

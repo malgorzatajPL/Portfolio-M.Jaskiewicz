@@ -1,0 +1,128 @@
+//   https://codepen.io/antho-fsy/pen/wJqWKj
+
+@import "keyframes.scss";
+@import "mixin.scss";
+@import "main.scss";
+@import "include-media";
+
+header{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    .left-header{
+        padding: 20px;
+        width: 50%;    
+        .hero{
+        text-align: center;
+        font-size: 36px;
+        padding: 20px;
+        color: $blue-color;
+        font-family: 'Nothing You Could Do', cursive;
+        }
+        .text {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: left;
+        color: $blue-color;
+        padding: 20px;
+        }
+    }
+.right-header{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    .background{
+        z-index: -1;
+        background-color: $blue-color;
+        border-radius: 45%;
+       .img{
+           .hero-img{
+               width: 300px;
+               padding: 50px;
+               margin: 0 auto;
+               display: inherit;
+            }
+        }
+    }
+}
+.border-bottom{
+  margin: 60px 40px;
+  width: 100%;
+  height: 5px;
+  background-color:  $blue-color;
+}
+
+// ANIMATION
+// https://codepen.io/antho-fsy/pen/wJqWKj
+
+.has-animation {
+    position: relative;
+  p, img {
+      opacity: 0;
+  }
+  &.animate-in {
+    p, img {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+    &:before {
+      background-color: $orange-color;
+    }
+    &:after {
+      background-color:  $blue-color;
+      animation-delay: .5s;
+    }
+  }
+  &.animation-ltr.animate-in {
+    &:before {
+      animation: revealLTR 1.8s ease;
+    }
+    &:after {
+      animation: revealLTR 1s .6s ease;
+    }
+  }
+  &.animation-rtl.animate-in {
+    &:before {
+      animation: revealRTL 1.8s ease;
+    }
+    &:after {
+      animation: revealRTL 1s .6s ease;
+    }
+  }
+}
+}
+
+@include media(">=tablet" , "<=850px") {
+  header{
+    width: 100%;
+    .left-header{
+      padding: 0;
+    }
+  }
+}
+
+
+
+@include media(">=phone" , "<=tablet") {
+  header{
+    width: 100%;
+    .left-header{ 
+      width: 100%;
+      .text{
+        text-align: center;
+      }
+    }
+    .right-header{ 
+      width: 100%;
+  }
+}
+}
