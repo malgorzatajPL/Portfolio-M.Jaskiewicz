@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+"scripts": {
+    "watch:sass": "node-sass scss/hero.scss css/style.css -w",
+    "start": "watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "keywords": [
     "portfolio",
@@ -14,6 +18,7 @@
   "author": "Malgorzata Jaskiewicz",
   "license": "ISC",
   "dependencies": {
-    "include-media": "^1.4.9"
+    "include-media": "^1.4.9",
+    "node-sass": "^5.0.0"
   }
 }

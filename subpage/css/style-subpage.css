@@ -1,6 +1,6 @@
 @-webkit-keyframes slide {
   0% {
-    opacity: 0;
+    opacity: 10;
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
   }
@@ -13,7 +13,7 @@
 
 @keyframes slide {
   0% {
-    opacity: 0;
+    opacity: 10;
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
   }
@@ -405,18 +405,78 @@ nav ul li:first-child {
   opacity: 1;
 }
 
-@media screen and (max-width: 50em) {
-  .grid figure {
-    display: inline-block;
-    float: none;
-    margin: 10px auto;
-    width: 100%;
-  }
-}
-
 #static:target ~ #header #navigation #link-static,
 #other:target ~ #header #navigation #link-other {
   background: #000;
   color: #fff;
 }
-/*# sourceMappingURL=style-subpage.css.map */
+
+@media (min-width: 550px) and (max-width: 700px) {
+  .content .panel {
+    left: 0px;
+  }
+  nav {
+    padding: 0;
+    position: fixed;
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 20px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul li {
+    width: 33%;
+  }
+  nav ul li:first-child {
+    margin: 0;
+  }
+  nav ul li a {
+    border: 1px solid #fff;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 550px) {
+  nav {
+    padding: 0;
+    position: fixed;
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul li:first-child {
+    margin: 0;
+  }
+  nav ul li a {
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .panel .content {
+    left: 0px;
+  }
+  .panel .content .panel-header {
+    margin-top: 70px;
+  }
+  .work {
+    width: 90%;
+  }
+  .work figure {
+    width: 85%;
+  }
+}
