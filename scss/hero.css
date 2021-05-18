@@ -383,7 +383,20 @@ main .next-step {
   }
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 280px) and (max-width: 320px) {
+  main h3 {
+    font-size: 20px;
+  }
+  main .icon .language {
+    padding: 10px;
+    font-size: 26px;
+  }
+  main .icon span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
   main h3 {
     font-size: 20px;
   }
@@ -521,12 +534,13 @@ header .has-animation.animation-rtl.animate-in:after {
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 768px) {
   header {
     width: 100%;
   }
   header .left-header {
     width: 100%;
+    padding: 0;
   }
   header .left-header .text {
     text-align: center;
@@ -693,7 +707,20 @@ main .next-step {
   }
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 280px) and (max-width: 320px) {
+  main h3 {
+    font-size: 20px;
+  }
+  main .icon .language {
+    padding: 10px;
+    font-size: 26px;
+  }
+  main .icon span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
   main h3 {
     font-size: 20px;
   }
@@ -839,13 +866,58 @@ main .next-step {
   padding: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .social .email {
-    font-size: 18px;
+@media (min-width: 280px) and (max-width: 320px) {
+  .social {
+    width: 100%;
+    margin: 40px 0;
   }
   .social .icons a i {
-    font-size: 28px;
-    padding: 13px;
+    font-size: 26px;
+    padding: 8px;
+  }
+  .social .email {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 350px) {
+  .social {
+    width: 100%;
+  }
+  .social .email {
+    font-size: 16px;
+    letter-spacing: .2px;
+    text-shadow: 1px 1px 1px #444;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+  .email {
+    font-size: 18px;
+    letter-spacing: .5px;
+  }
+}
+
+/*
+@include media(">=350px" , "<=500px") {
+
+}*/
+@media (min-width: 350px) and (max-width: 768px) {
+  .social {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .social h3 {
+    font-size: 24px;
+  }
+  .social .icons {
+    margin-bottom: 10px;
+  }
+  .social .icons a i {
+    font-size: 36px;
+    padding: 14px;
   }
 }
 
@@ -874,5 +946,4 @@ body {
   color: white;
   font-size: 24px;
   font-family: 'Inconsolata', monospace;
-  background-color: blueviolet;
 }

@@ -30,21 +30,63 @@
 
 }
 
-@include media(">=phone" , "<=tablet") {
+@include media(">=280px" , "<=phone") {
   .social{
-   
-    .email{
-      font-size: 18px;
-    }
+    width: 100%;
+    margin: 40px 0;
     .icons{
       a{
         i{
-          font-size: 28px;
-          padding: 13px;
+          font-size: 26px;
+          padding: 8px;
+        }
       }
     }
-  }}
+    .email{
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+  }
 }
+@include media(">=phone" , "<=350px") {
+  .social{
+    width: 100%;
+    .email{
+      font-size: 16px;
+      letter-spacing: .2px;
+      text-shadow: 1px 1px 1px #444;
+
+    }
+  }
+}
+@include media(">=350px" , "<=tablet") {
+  .email{
+    font-size: 18px;
+    letter-spacing: .5px;
+  }
+}/*
+@include media(">=350px" , "<=500px") {
+
+}*/
+@include media(">=350px" , "<=tablet") {
+  .social{
+    width: fit-content;
+    h3{
+      font-size: 24px;
+   }
+    .icons{
+      margin-bottom: 10px;
+      a{
+        i{
+          font-size: 36px;
+          padding: 14px;
+        }
+      }
+    }
+    
+  }
+}
+
 @include media(">=tablet" , "<=desktop") {
   .social{
      .email{

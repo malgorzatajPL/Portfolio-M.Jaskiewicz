@@ -115,7 +115,25 @@ main {
 }
 }
 
-@include media(">=phone" , "<=desktop") {
+@include media(">=280px" , "<=phone") {
+main{
+	h3{
+		font-size: 20px;
+	}
+	.icon{
+
+		.language{
+			padding: 10px;
+			font-size: 26px;
+		}
+		span{
+			font-size: 18px;
+		}
+	}
+}
+}
+
+@include media(">=phone" , "<=tablet") {
 main{
 	h3{
 		font-size: 20px;

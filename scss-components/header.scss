@@ -112,11 +112,12 @@ header{
 
 
 
-@include media(">=phone" , "<=tablet") {
+@include media(">=280px" , "<=tablet") {
   header{
     width: 100%;
     .left-header{ 
       width: 100%;
+      padding: 0;
       .text{
         text-align: center;
       }
