@@ -28,6 +28,7 @@ main {
 		clear: both;
 	}
 	.skills,
+	.currently,
 	.next-step,
 	.my-work {
 		display: inline-block;
@@ -87,6 +88,9 @@ main {
 	}
 	.skills {
 		background-color: $orange-color;
+	}
+	.currently {
+		background-color: $green-color;
 	}
 	.next-step {
 		background-color: $purple-color;

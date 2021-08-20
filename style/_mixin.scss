@@ -3,12 +3,20 @@ $purple-color: #6E2262;
 $orange-color: #E5523A;
 $blue-color: #18454a;
 $yellow-color: #c09a00;
+$green-color: #569109;
 
 
 @mixin primary-font {
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-family: 'Inconsolata', monospace;
+}
+
+@mixin text-font {
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: left;
+	color: $blue-color;
 }
 
 @mixin btn {
