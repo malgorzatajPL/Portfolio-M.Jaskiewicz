@@ -1,5 +1,6 @@
 @import "../../style/keyframes";
 @import "../../style/mixin";
+@import "../../style/include-media";
 @import "../../style/include-media-export";
 
 *{
@@ -158,10 +159,7 @@ nav{
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-                transition: opacity 0.35s, -webkit-transform 0.35s;
-                transition: opacity 0.35s, transform 0.35s;
-                transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+				transition: opacity 0.35s;
                 -webkit-transform: translate3d(-50%, -50%, 0);
                 transform: translate3d(-50%, -50%, 0);
                 -webkit-transform-origin: 50%;
@@ -179,10 +177,7 @@ nav{
                         width: 70px;
                         padding: 20px 0;
                         opacity: 0;
-                        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-                        transition: opacity 0.35s, -webkit-transform 0.35s;
-                        transition: opacity 0.35s, transform 0.35s;
-                        transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+                       transition: opacity 0.35s;
                     }
                     &:first-child {
                         .i {
@@ -212,9 +207,7 @@ nav{
 			content: '';
 			opacity: 0;
 			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-			transition: opacity 0.35s, -webkit-transform 0.35s;
-			transition: opacity 0.35s, transform 0.35s;
-			transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s;
 			-webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
 			transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(0, 0, 1);
 			-webkit-transform-origin: 50%;
