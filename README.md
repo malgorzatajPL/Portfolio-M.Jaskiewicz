@@ -1,6 +1,7 @@
-# moje-portfolio
-https://malgorzatajpl.github.io/moje-portfolio/
+# Portfolio Malgorzata Jaskiewicz frontend developer
 
+Live:
+https://malgorzatajpl.github.io/portfolio-M.Jaskiewicz/
 
 SASS / SCSS, compiled via VSC extension ritwickdey.live-sass was used. For RWD, I used NPM include-media.
 Startup Effect:
