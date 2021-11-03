@@ -11,8 +11,5 @@ Main section fade effect:
 http://www.menucool.com/ui/slide-in-when-scrolling
 .
 Hover effect on subpage:
-HERA
-https://tympanus.net/codrops/2014/10/28/some-more-subtle-hover-effect-ideas/
-.
 Technology icons:
 https://devicon.dev/

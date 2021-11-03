@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "watch:sass": "node-sass scss/hero.scss css/style.css -w",
     "start": "watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "include-media": "^1.4.9",
+    "jquery": "^3.6.0",
     "node-sass": "^5.0.0"
   }
 }
