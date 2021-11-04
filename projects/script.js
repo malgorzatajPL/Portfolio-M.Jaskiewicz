@@ -6,8 +6,7 @@ class Slideshow {
 	constructor (userOptions = {}) {
     const defaultOptions = {
       $el: $('.slideshow'),
-      showArrows: false,
-      showPagination: true,
+      showArrows: false, 
       duration: 10000,
       autoplay: false
     }
@@ -16,8 +15,7 @@ class Slideshow {
     
 		this.$el = options.$el;
 		this.maxSlide = this.$el.find($('.js-slider-home-slide')).length;
-    this.showArrows = this.maxSlide > 1 ? options.showArrows : false;
-    this.showPagination = options.showPagination;
+    this.showArrows = this.maxSlide > 1 ? options.showArrows : false; 
 		this.currentSlide = 1;
 		this.isAnimating = false;
 		this.animationDuration = 1200;
